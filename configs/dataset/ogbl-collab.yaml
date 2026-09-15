@@ -1,0 +1,4 @@
+name: ogbl-collab
+protocol: ogb
+features: official
+seeds: [0, 1, 2, 3, 4]

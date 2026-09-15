@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-09-13T15:47:13",
+  "model_label": "M1",
+  "dataset": "smoke",
+  "seed": 0,
+  "run_id": "smoke_uniform_seed0_20aa19cabf80",
+  "result_file": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\raw\\smoke_uniform_seed0_20aa19cabf80.json",
+  "log_file": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\logs\\M1_smoke_uniform_seed0_20aa19cabf80.log",
+  "status": "COMPLETED",
+  "checkpoint": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\checkpoints\\smoke_uniform_seed0_20aa19cabf80.pt",
+  "evaluation_file": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\mechanism_audit\\smoke_uniform_seed0_20aa19cabf80\\evaluation.json",
+  "probe_file": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\probe\\smoke_uniform_seed0_20aa19cabf80\\posthoc_probe.csv",
+  "failure_code": "",
+  "message": ""
+}

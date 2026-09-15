@@ -1,0 +1,66 @@
+{
+  "dataset": "smoke",
+  "protocol_train": "uniform",
+  "protocol_eval": "standard",
+  "model": "dcdlp",
+  "ablation": "A5",
+  "seed": 91,
+  "cn_feature_mode": "raw_plus_residual",
+  "interaction_mode": "audited",
+  "config_hash": "1ddba6dab1c2",
+  "git_commit": "untracked",
+  "best_epoch": 0,
+  "metrics": {
+    "mrr": 0.4633260711692084,
+    "hits10": 0.7777777777777778,
+    "hits20": 1.0,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 5.888888888888889,
+    "auc": 0.7790123456790123,
+    "ap": 0.2444833304019574,
+    "groups": {
+      "HH": {
+        "mrr": 1.0,
+        "count": 1
+      },
+      "HL": {
+        "mrr": 0.538888888888889,
+        "count": 5
+      },
+      "LH": {
+        "mrr": 0.20833333333333331,
+        "count": 2
+      },
+      "LL": {
+        "mrr": 0.058823529411764705,
+        "count": 1
+      }
+    },
+    "macro_mrr": 0.45151143790849674,
+    "worst_group_mrr": 0.058823529411764705,
+    "group_gap": 0.9411764705882353
+  },
+  "runtime": {
+    "train_seconds": 0.30475520016625524,
+    "inference_seconds": 0.0,
+    "peak_gpu_mb": 0.0
+  },
+  "checkpoint": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\local_validation\\checkpoints\\smoke_uniform_seed91_1ddba6dab1c2.pt",
+  "predictions": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\local_validation\\raw\\smoke_uniform_seed91_1ddba6dab1c2_predictions.csv",
+  "intervention_failures": {},
+  "cn_feature_metadata": {
+    "mode": "raw_plus_residual",
+    "fit_split": "train",
+    "uses_valid_or_test": false,
+    "estimator": "HistGradientBoostingRegressor",
+    "symmetric_endpoint_degrees": true,
+    "seed": 91,
+    "calibration_pair_count": 158
+  },
+  "evaluation_candidates": {
+    "source": "generated_uniform",
+    "protocol": "standard",
+    "negatives_per_positive": 20
+  }
+}

@@ -1,0 +1,20 @@
+name: phase2_a5_residual
+datasets: [cora]
+models: [A5]
+protocol_train: [uniform]
+small_seeds: [0, 1, 2, 3, 4]
+
+# Same budget and data as phase2_a5_raw; only the CN feature mode changes.
+pretrain_epochs: 20
+disentangle_epochs: 20
+hidden_dim: 128
+branch_dim: 64
+num_layers: 2
+dropout: 0.3
+backbone: gcn
+lr: 0.001
+weight_decay: 0.0001
+batch_size: 1024
+intervention_ratio: 0.25
+cn_feature_mode: raw_plus_residual
+interaction_mode: audited

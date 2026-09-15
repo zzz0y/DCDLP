@@ -1,0 +1,7 @@
+dataset,seed,protocol_train,protocol_eval,status,reason,prediction_pair_status,a5_config_hash,a14_w010_config_hash,a5_checkpoint,a14_w010_checkpoint,a5_predictions,a14_w010_predictions,a5_mrr,a14_w010_mrr
+citeseer,0,uniform,heart,MISSING,"A5 missing, A14-w010 missing",MISSING,MISSING,MISSING,MISSING,MISSING,MISSING,MISSING,,
+citeseer,1,uniform,heart,MISSING,"A5 missing, A14-w010 missing",MISSING,MISSING,MISSING,MISSING,MISSING,MISSING,MISSING,,
+citeseer,2,uniform,heart,MISSING,"A5 missing, A14-w010 missing",MISSING,MISSING,MISSING,MISSING,MISSING,MISSING,MISSING,,
+cora,0,uniform,heart,MISSING,"A5 missing, A14-w010 missing",MISSING,MISSING,MISSING,MISSING,MISSING,MISSING,MISSING,,
+cora,1,uniform,heart,MISSING,"A5 missing, A14-w010 missing",MISSING,MISSING,MISSING,MISSING,MISSING,MISSING,MISSING,,
+cora,2,uniform,heart,MISSING,"A5 missing, A14-w010 missing",MISSING,MISSING,MISSING,MISSING,MISSING,MISSING,MISSING,,

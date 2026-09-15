@@ -1,0 +1,30 @@
+{
+  "phase1_evidence": {
+    "run_pair_status": "COMPLETE",
+    "available_run_pairs": 6,
+    "missing_run_pairs": 0,
+    "missing_intervention_attempts": 402,
+    "missing_dose_response_rows": 72
+  },
+  "decision": "A14_MECHANISM_NOT_SUPPORTED",
+  "next_route": "A5_PLUS_CONTROLLED_STRUCTURE_AUDIT_AND_CONDITIONAL_CN_RESIDUAL",
+  "phase2": {
+    "status": "IMPLEMENTED_AND_TESTED_NO_TRAINING",
+    "cn_feature_modes": [
+      "raw",
+      "residual",
+      "raw_plus_residual"
+    ],
+    "interaction_modes": [
+      "unrestricted",
+      "audited",
+      "disabled"
+    ],
+    "test_count": 37,
+    "test_status": "PASSED",
+    "legacy_checkpoint_strict_load": "PASSED",
+    "official_heart_candidate_adapter": "IMPLEMENTED_AND_INTEGRATION_CHECKED",
+    "uniform_fallback_for_official_protocol": "FORBIDDEN"
+  },
+  "training_started": false
+}

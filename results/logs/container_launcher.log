@@ -1,0 +1,37 @@
+DCDLP offline full experiment launcher
+Root: /workspace
+Python: python
+Visible GPUs: 0
+Resume completed jobs: true
+No broken requirements found.
+.....................                                                    [100%]
+[DATA READY] data/processed/cora_heart_seed0.npz
+[DATA READY] data/processed/citeseer_heart_seed0.npz
+[DATA READY] data/processed/pubmed_heart_seed0.npz
+[DATA READY] data/processed/ogbl-collab_ogb_seed0.npz
+[DATA READY] data/processed/ogbl-ddi_ogb_seed0.npz
+{"suite": "paper_main", "runnable": 86, "not_run": 780, "skipped": 814}
+{"suite": "paper_ablation", "runnable": 1039, "not_run": 160, "skipped": 1}
+{"suite": "paper_analysis", "runnable": 35, "not_run": 0, "skipped": 0}
+Preflight passed; no experiment jobs were launched.
+DCDLP offline full experiment launcher
+Root: /workspace
+Python: python
+Visible GPUs: 0
+Resume completed jobs: true
+Concurrent small/medium jobs: 4
+Concurrent OGB jobs: 1
+CPU math threads per job: 8
+OGB batch size: 8192
+OGB max interventions per batch: 1
+OGB max interventions per epoch: 256
+Run mode: pilot
+No broken requirements found.
+.....................                                                    [100%]
+[DATA READY] data/processed/cora_heart_seed0.npz
+[DATA READY] data/processed/citeseer_heart_seed0.npz
+[DATA READY] data/processed/pubmed_heart_seed0.npz
+[DATA READY] data/processed/ogbl-collab_ogb_seed0.npz
+[DATA READY] data/processed/ogbl-ddi_ogb_seed0.npz
+{"suite": "paper_ablation", "runnable": 18, "not_run": 0, "skipped": 0}
+Preflight passed; no experiment jobs were launched.

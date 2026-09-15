@@ -1,0 +1,23 @@
+# This file is paired with docker/Dockerfile.selective.  Keeping the context
+# small is important: the repository also contains several gigabytes of OGB
+# caches and old experiment artifacts which must not be uploaded or baked into
+# a new image.
+*
+!pyproject.toml
+!README.md
+!src/
+!src/**
+!scripts/
+!scripts/**
+!configs/
+!configs/**
+!docker/
+!docker/**
+!data/
+!data/processed/
+!data/processed/cora_heart_seed0.npz
+!third_party/
+!third_party/HeaRT/
+!third_party/HeaRT/dataset/
+!third_party/HeaRT/dataset/cora/
+!third_party/HeaRT/dataset/cora/**

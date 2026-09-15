@@ -1,0 +1,3 @@
+name: degree_corrected
+modes: [official_library, native_reimplementation]
+validate: [log_degree_ks, degree_product_wasserstein, pa_randomness]

@@ -1,0 +1,13 @@
+\begin{tabular}{lllllllrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr}
+\toprule
+ &  &  &  &  &  &  & \multicolumn{3}{r}{metric_mrr} & \multicolumn{3}{r}{metric_hits10} & \multicolumn{3}{r}{metric_hits20} & \multicolumn{3}{r}{metric_hits50} & \multicolumn{3}{r}{metric_hits100} & \multicolumn{3}{r}{metric_mean_positive_rank} & \multicolumn{3}{r}{metric_auc} & \multicolumn{3}{r}{metric_ap} & \multicolumn{3}{r}{metric_macro_mrr} & \multicolumn{3}{r}{metric_worst_group_mrr} & \multicolumn{3}{r}{metric_group_gap} \\
+ &  &  &  &  &  &  & mean & std & count & mean & std & count & mean & std & count & mean & std & count & mean & std & count & mean & std & count & mean & std & count & mean & std & count & mean & std & count & mean & std & count & mean & std & count \\
+dataset & model & ablation & protocol_train & protocol_eval & cn_feature_mode & interaction_mode &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\midrule
+\multirow[t]{3}{*}{smoke} & \multirow[t]{3}{*}{dcdlp} & \multirow[t]{3}{*}{A5} & \multirow[t]{3}{*}{uniform} & \multirow[t]{3}{*}{standard} & raw & audited & 0.1697 & NaN & 1 & 0.8889 & NaN & 1 & 1.0000 & NaN & 1 & 1.0000 & NaN & 1 & 1.0000 & NaN & 1 & 6.8889 & NaN & 1 & 0.4469 & NaN & 1 & 0.0863 & NaN & 1 & 0.1850 & NaN & 1 & 0.1290 & NaN & 1 & 0.1377 & NaN & 1 \\
+\cline{6-40}
+ &  &  &  &  & \multirow[t]{2}{*}{residual} & audited & 0.1660 & NaN & 1 & 0.8889 & NaN & 1 & 1.0000 & NaN & 1 & 1.0000 & NaN & 1 & 1.0000 & NaN & 1 & 7.0000 & NaN & 1 & 0.4420 & NaN & 1 & 0.0855 & NaN & 1 & 0.1813 & NaN & 1 & 0.1290 & NaN & 1 & 0.1377 & NaN & 1 \\
+ &  &  &  &  &  & disabled & 0.1660 & NaN & 1 & 0.8889 & NaN & 1 & 1.0000 & NaN & 1 & 1.0000 & NaN & 1 & 1.0000 & NaN & 1 & 7.0000 & NaN & 1 & 0.4469 & NaN & 1 & 0.0863 & NaN & 1 & 0.1822 & NaN & 1 & 0.1206 & NaN & 1 & 0.1460 & NaN & 1 \\
+\cline{1-40} \cline{2-40} \cline{3-40} \cline{4-40} \cline{5-40} \cline{6-40}
+\bottomrule
+\end{tabular}

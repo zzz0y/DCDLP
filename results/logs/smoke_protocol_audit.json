@@ -1,0 +1,52 @@
+﻿{
+  "heart": {
+    "status": "NOT_AVAILABLE",
+    "reason": "Official candidate file missing: D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\data\\negatives\\smoke_heart_test_seed0.npz"
+  },
+  "degree_corrected": {
+    "mrr": 0.20829725829725831,
+    "hits10": 0.5555555555555556,
+    "hits20": 1.0,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 9.666666666666666,
+    "auc": 0.5512345679012345,
+    "ap": 0.05666031984701594,
+    "groups": {
+      "HH": {
+        "mrr": 0.07727272727272727,
+        "count": 3
+      },
+      "HL": {
+        "mrr": null,
+        "count": 0
+      },
+      "LH": {
+        "mrr": 0.29523809523809524,
+        "count": 5
+      },
+      "LL": {
+        "mrr": 0.16666666666666666,
+        "count": 1
+      }
+    },
+    "macro_mrr": 0.17972582972582973,
+    "worst_group_mrr": 0.07727272727272727,
+    "group_gap": 0.21796536796536797
+  },
+  "intervention": {
+    "status": "COMPLETED",
+    "attempted_pairs": 9,
+    "failures": {
+      "NO_CANDIDATE": 2
+    },
+    "valid_degree": 9,
+    "dsi": 0.022422751411795616,
+    "routing_degree": 0.47013384103775024,
+    "cross_degree_to_cn": 0.008198718540370464,
+    "valid_cn": 7,
+    "csi": 0.050766997039318085,
+    "routing_cn": 0.7539902329444885,
+    "cross_cn_to_degree": 0.0
+  }
+}

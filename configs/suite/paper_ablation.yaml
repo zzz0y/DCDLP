@@ -1,0 +1,11 @@
+name: paper_ablation
+datasets: [cora, citeseer, pubmed, ogbl-collab, ogbl-ddi]
+models: [A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14]
+ablations: [A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14]
+intervention_ratio: [0.10, 0.25, 0.50, 1.00]
+intervention_magnitude: [1, 2]
+num_layers: [1, 2, 3]
+feature_mode: [feature_and_structure, structure_only]
+protocol_train: [uniform, degree_corrected]
+small_seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+ogb_seeds: [0, 1, 2, 3, 4]

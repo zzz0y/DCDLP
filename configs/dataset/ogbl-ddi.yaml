@@ -1,0 +1,4 @@
+name: ogbl-ddi
+protocol: ogb
+features: learned_embedding
+seeds: [0, 1, 2, 3, 4]

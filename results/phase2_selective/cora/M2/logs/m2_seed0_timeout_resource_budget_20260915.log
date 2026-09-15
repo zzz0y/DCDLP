@@ -1,0 +1,5 @@
+status: FAILED
+failure_code: TIMEOUT_RESOURCE_BUDGET
+stage: Step 11 M2 seed 0, fixed 20 pretrain + 20 routing epochs
+observed: Process remained CPU-active for approximately 30 minutes without writing a manifest row, checkpoint, result JSON, or traceback.
+action: Safely stopped only this no-artifact process. No score or replacement data was generated. A separate isolated 5+5-epoch Cora screening was started with the same budget for every M0-M3 model and seed.

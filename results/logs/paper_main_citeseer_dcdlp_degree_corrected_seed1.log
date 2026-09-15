@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\桌面\研究生相关事项\CodeWork\DCDLP_work\DCDLP\src\dcdlp\cli.py", line 172, in <module>
+    main()
+  File "D:\桌面\研究生相关事项\CodeWork\DCDLP_work\DCDLP\src\dcdlp\cli.py", line 168, in main
+    args.func(args)
+  File "D:\桌面\研究生相关事项\CodeWork\DCDLP_work\DCDLP\src\dcdlp\cli.py", line 113, in train
+    _, result = train_model(dataset, config)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\桌面\研究生相关事项\CodeWork\DCDLP_work\DCDLP\src\dcdlp\train.py", line 250, in train_model
+    cf_graph, _ = intervene_degree(graph, u, v, "u", 1, config.seed + epoch * 1009 + int(local_index), forbidden)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\桌面\研究生相关事项\CodeWork\DCDLP_work\DCDLP\src\dcdlp\interventions\degree_intervention.py", line 60, in intervene_degree
+    current, _, _ = _single_degree_step(current, u, v, target, 1 if delta > 0 else -1, forbidden, rng)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\桌面\研究生相关事项\CodeWork\DCDLP_work\DCDLP\src\dcdlp\interventions\degree_intervention.py", line 24, in _single_degree_step
+    candidate = apply_edits(graph, [edge(donor, retained)], [added])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\桌面\研究生相关事项\CodeWork\DCDLP_work\DCDLP\src\dcdlp\interventions\candidate_search.py", line 30, in apply_edits
+    result = graph.copy()
+             ^^^^^^^^^^^^
+  File "D:\桌面\研究生相关事项\CodeWork\DCDLP_work\DCDLP\.venv\Lib\site-packages\networkx\classes\graph.py", line 1674, in copy
+    G.add_edges_from(
+  File "D:\桌面\研究生相关事项\CodeWork\DCDLP_work\DCDLP\.venv\Lib\site-packages\networkx\classes\graph.py", line 1062, in add_edges_from
+    datadict.update(dd)
+KeyboardInterrupt

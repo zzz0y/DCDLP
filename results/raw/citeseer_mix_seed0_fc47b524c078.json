@@ -1,0 +1,53 @@
+{
+  "dataset": "citeseer",
+  "protocol_train": "mix",
+  "protocol_eval": "heart",
+  "model": "dcdlp",
+  "ablation": "A14",
+  "seed": 0,
+  "config_hash": "fc47b524c078",
+  "git_commit": "untracked",
+  "best_epoch": 3,
+  "metrics": {
+    "mrr": 0.7316671820243249,
+    "hits10": 0.9868131868131869,
+    "hits20": 1.0,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 2.169230769230769,
+    "auc": 0.9399973433160246,
+    "ap": 0.6039475612547716,
+    "groups": {
+      "HH": {
+        "mrr": 0.9728395061728393,
+        "count": 135
+      },
+      "HL": {
+        "mrr": 0.5374258109040718,
+        "count": 115
+      },
+      "LH": {
+        "mrr": 0.8788606403013182,
+        "count": 59
+      },
+      "LL": {
+        "mrr": 0.6021814277807429,
+        "count": 146
+      }
+    },
+    "macro_mrr": 0.747826846289743,
+    "worst_group_mrr": 0.5374258109040718,
+    "group_gap": 0.4354136952687675
+  },
+  "runtime": {
+    "train_seconds": 1420.135140199971,
+    "inference_seconds": 0.0,
+    "peak_gpu_mb": 89.517578125
+  },
+  "checkpoint": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\checkpoints\\citeseer_mix_seed0_fc47b524c078.pt",
+  "predictions": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\raw\\citeseer_mix_seed0_fc47b524c078_predictions.csv",
+  "intervention_failures": {
+    "DUPLICATE_EDGE": 3433,
+    "NO_CANDIDATE": 485
+  }
+}

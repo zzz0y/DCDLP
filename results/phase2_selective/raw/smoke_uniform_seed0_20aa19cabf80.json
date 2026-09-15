@@ -1,0 +1,112 @@
+{
+  "dataset": "smoke",
+  "protocol_train": "uniform",
+  "protocol_eval": "standard",
+  "model": "dcdlp",
+  "ablation": "A5",
+  "seed": 0,
+  "cn_feature_mode": "residual",
+  "interaction_mode": "audited",
+  "score_routing_enabled": true,
+  "routing_finetune_encoder": "frozen",
+  "config_hash": "20aa19cabf80",
+  "git_commit": "untracked",
+  "best_epoch": 0,
+  "metrics": {
+    "mrr": 0.1659652076318743,
+    "hits10": 0.8888888888888888,
+    "hits20": 1.0,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 7.0,
+    "auc": 0.4419753086419753,
+    "ap": 0.08550214185442481,
+    "groups": {
+      "HH": {
+        "mrr": 0.14814814814814814,
+        "count": 3
+      },
+      "HL": {
+        "mrr": null,
+        "count": 0
+      },
+      "LH": {
+        "mrr": 0.12897727272727272,
+        "count": 4
+      },
+      "LL": {
+        "mrr": 0.26666666666666666,
+        "count": 2
+      }
+    },
+    "macro_mrr": 0.18126402918069584,
+    "worst_group_mrr": 0.12897727272727272,
+    "group_gap": 0.13768939393939394
+  },
+  "runtime": {
+    "train_seconds": 0.1597257999997055,
+    "inference_seconds": 0.0,
+    "peak_gpu_mb": 0.0
+  },
+  "checkpoint": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\checkpoints\\smoke_uniform_seed0_20aa19cabf80.pt",
+  "predictions": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\predictions\\smoke_uniform_seed0_20aa19cabf80_predictions.csv",
+  "intervention_failures": {},
+  "cn_feature_metadata": {
+    "residualizer_type": "NOT_USED",
+    "residualizer_parameters": {},
+    "fit_seed": 0,
+    "fit_sample_count": 158,
+    "symmetric_endpoint_degrees": true,
+    "cn_feature_mode": "residual",
+    "cn_input_schema": "selective_v1",
+    "fit_split": "train",
+    "uses_valid_or_test": false,
+    "data_source": "train_positive+fixed_train_negative_epoch0",
+    "data_hash": "c1d3b570cd8acfc00263c43c0fba2721c6ec715b21d78277305adfdbe4ac58c0",
+    "config_hash": "a6400c512174",
+    "used_as_model_input": true
+  },
+  "evaluation_candidates": {
+    "source": "generated_uniform",
+    "hash": "7fb769b17dc02b40dd7bda059c63a82cdb41f3351cf7e44bd579236d24cfd050",
+    "shape": [
+      9,
+      10,
+      2
+    ],
+    "seed": 999,
+    "protocol": "standard",
+    "negatives_per_positive": 10
+  },
+  "data_integrity": {
+    "split_hash": "429da50ed5d3",
+    "train_positive_hash": "61d7f0758b3fe563b6cb64c162b3d6c096faf68cf0b7170ac1fed2933727d4a7",
+    "valid_positive_hash": "0b17b1ebb9425c30f6cacf401952c1cecceb32aa9115d3a1634739d4418addd1",
+    "test_positive_hash": "d0dcf409e4b4fbf85491716cae675eb589ded370b721e1f2bba1717bf6af7d17",
+    "candidate_hash": "7fb769b17dc02b40dd7bda059c63a82cdb41f3351cf7e44bd579236d24cfd050"
+  },
+  "intervention_cache": {
+    "source": "deterministic_online_generation",
+    "id": "29d5b85e1834"
+  },
+  "parameter_count": {
+    "total": 1806,
+    "trainable": 1198,
+    "cn_branch": 481
+  },
+  "loss_weights": {
+    "lambda_link": 1.0,
+    "lambda_score_route": 0.03,
+    "lambda_target_response": 0.03,
+    "lambda_interaction_share": 0.01,
+    "lambda_interaction_delta": 0.01,
+    "lambda_orthogonal_legacy": 0.0,
+    "lambda_adversarial_legacy": 0.0
+  },
+  "device": "cpu",
+  "result_file": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\raw\\smoke_uniform_seed0_20aa19cabf80.json",
+  "pipeline_model": "M1",
+  "mechanism_predictions": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\mechanism_audit\\smoke_uniform_seed0_20aa19cabf80\\intervention_predictions.csv",
+  "probe_results": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\probe\\smoke_uniform_seed0_20aa19cabf80\\posthoc_probe.csv",
+  "evaluation_file": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\mechanism_audit\\smoke_uniform_seed0_20aa19cabf80\\evaluation.json"
+}

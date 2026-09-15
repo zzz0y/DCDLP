@@ -1,0 +1,4 @@
+name: standard
+train_negative: uniform
+negative_ratio: 1
+fixed_eval_negatives: true

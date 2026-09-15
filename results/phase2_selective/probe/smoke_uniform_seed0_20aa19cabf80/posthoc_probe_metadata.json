@@ -1,0 +1,38 @@
+{
+  "checkpoint": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\checkpoints\\smoke_uniform_seed0_20aa19cabf80.pt",
+  "dataset": "smoke",
+  "model_seed": 0,
+  "probe_seeds": [
+    0,
+    1,
+    2
+  ],
+  "pair_sample_seed": 0,
+  "pair_split_hashes": {
+    "train": "6dbebbdbeee8521a4c5d71fe9a579539d6aca0ed902fe692b5ff36a8a1df045e",
+    "valid": "0b17b1ebb9425c30f6cacf401952c1cecceb32aa9115d3a1634739d4418addd1",
+    "test": "d0dcf409e4b4fbf85491716cae675eb589ded370b721e1f2bba1717bf6af7d17"
+  },
+  "residualizer": {
+    "residualizer_type": "NOT_USED",
+    "residualizer_parameters": {},
+    "fit_seed": 0,
+    "fit_sample_count": 158,
+    "symmetric_endpoint_degrees": true,
+    "cn_feature_mode": "residual",
+    "cn_input_schema": "selective_v1",
+    "fit_split": "train",
+    "uses_valid_or_test": false,
+    "data_source": "train_positive+fixed_train_negative_epoch0",
+    "data_hash": "c1d3b570cd8acfc00263c43c0fba2721c6ec715b21d78277305adfdbe4ac58c0",
+    "config_hash": "a6400c512174",
+    "used_as_model_input": true
+  },
+  "model_frozen": true,
+  "test_not_used_for_selection": true,
+  "files": {
+    "per_seed": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\probe\\smoke_uniform_seed0_20aa19cabf80\\posthoc_probe.csv",
+    "summary": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\probe\\smoke_uniform_seed0_20aa19cabf80\\posthoc_probe_summary.csv",
+    "predictions": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\probe\\smoke_uniform_seed0_20aa19cabf80\\posthoc_probe_predictions.csv"
+  }
+}

@@ -1,0 +1,32 @@
+name: phase2_selective_smoke
+datasets: [smoke]
+models: [M0, M1, M3]
+small_seeds: [0]
+protocol_train: [uniform]
+output_dir: results/phase2_selective
+prediction_subdir: predictions
+pretrain_epochs: 1
+disentangle_epochs: 1
+hidden_dim: 16
+branch_dim: 8
+batch_size: 256
+intervention_ratio: 0.05
+max_interventions_per_batch: 8
+max_interventions_per_epoch: 16
+cn_input_schema: selective_v1
+score_routing_enabled: true
+lambda_link: 1.0
+lambda_score_route: 0.03
+lambda_target_response: 0.03
+routing_margin_cn: 0.0
+routing_margin_degree: 0.0
+target_floor_cn: 0.05
+target_floor_degree: 0.05
+interaction_route_weight: 1.0
+interaction_share_cap: 0.20
+interaction_delta_cap: 0.20
+lambda_interaction_share: 0.01
+lambda_interaction_delta: 0.01
+routing_finetune_encoder: frozen
+encoder_lr_multiplier: 0.1
+

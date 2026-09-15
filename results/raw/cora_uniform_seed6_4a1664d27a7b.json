@@ -1,0 +1,52 @@
+{
+  "dataset": "cora",
+  "protocol_train": "uniform",
+  "protocol_eval": "heart",
+  "model": "dcdlp",
+  "ablation": "A14",
+  "seed": 6,
+  "config_hash": "4a1664d27a7b",
+  "git_commit": "untracked",
+  "best_epoch": 3,
+  "metrics": {
+    "mrr": 0.7302241304292314,
+    "hits10": 0.9791271347248577,
+    "hits20": 1.0,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 2.301707779886148,
+    "auc": 0.9356111533185227,
+    "ap": 0.5944155774300991,
+    "groups": {
+      "HH": {
+        "mrr": 0.975609756097561,
+        "count": 164
+      },
+      "HL": {
+        "mrr": 0.632624500181752,
+        "count": 131
+      },
+      "LH": {
+        "mrr": 0.8952882205513785,
+        "count": 95
+      },
+      "LL": {
+        "mrr": 0.41534252744536126,
+        "count": 137
+      }
+    },
+    "macro_mrr": 0.7297162510690132,
+    "worst_group_mrr": 0.41534252744536126,
+    "group_gap": 0.5602672286521997
+  },
+  "runtime": {
+    "train_seconds": 594.8155772999744,
+    "inference_seconds": 0.0,
+    "peak_gpu_mb": 2741.1318359375
+  },
+  "checkpoint": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\checkpoints\\cora_uniform_seed6_4a1664d27a7b.pt",
+  "predictions": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\raw\\cora_uniform_seed6_4a1664d27a7b_predictions.csv",
+  "intervention_failures": {
+    "NO_CANDIDATE": 344
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "dataset": "smoke",
+  "protocol_train": "uniform",
+  "protocol_eval": "standard",
+  "model": "dcdlp",
+  "ablation": "A14",
+  "seed": 0,
+  "config_hash": "1522611c63c9",
+  "git_commit": "untracked",
+  "best_epoch": 1,
+  "metrics": {
+    "mrr": 0.12266437266437263,
+    "hits10": 0.3333333333333333,
+    "hits20": 0.8888888888888888,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 10.88888888888889,
+    "auc": 0.495679012345679,
+    "ap": 0.04976978179874658,
+    "groups": {
+      "HH": {
+        "mrr": 0.07181707181707182,
+        "count": 3
+      },
+      "HL": {
+        "mrr": null,
+        "count": 0
+      },
+      "LH": {
+        "mrr": 0.10714285714285714,
+        "count": 3
+      },
+      "LL": {
+        "mrr": 0.18903318903318903,
+        "count": 3
+      }
+    },
+    "macro_mrr": 0.12266437266437265,
+    "worst_group_mrr": 0.07181707181707182,
+    "group_gap": 0.1172161172161172
+  },
+  "runtime": {
+    "train_seconds": 2.615658499998972,
+    "inference_seconds": 0.0,
+    "peak_gpu_mb": 0.0
+  },
+  "checkpoint": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\checkpoints\\smoke_uniform_seed0_1522611c63c9.pt",
+  "predictions": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\raw\\smoke_uniform_seed0_1522611c63c9_predictions.csv",
+  "intervention_failures": {},
+  "result_file": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\raw\\smoke_uniform_seed0_1522611c63c9.json"
+}

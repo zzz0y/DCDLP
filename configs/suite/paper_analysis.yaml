@@ -1,0 +1,10 @@
+name: paper_analysis
+datasets: [synthetic-pa-only, synthetic-cn-only, synthetic-mixed, synthetic-feature, synthetic-null, synthetic-degree-dominant, synthetic-cn-dominant]
+models: [dcdlp]
+protocol_train: [uniform]
+small_seeds: [0, 1, 2, 3, 4]
+ogb_seeds: [0, 1, 2, 3, 4]
+tasks: [bias_diagnostics, intervention_audit, quadrants, posthoc_probes, synthetic_mechanism, cross_protocol, significance, efficiency, figures]
+synthetic_mechanisms: [pa-only, cn-only, mixed, feature, null, degree-dominant, cn-dominant]
+synthetic_seeds: [0, 1, 2, 3, 4]
+bootstrap_samples: 10000

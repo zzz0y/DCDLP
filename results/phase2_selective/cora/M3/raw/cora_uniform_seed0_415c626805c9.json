@@ -1,0 +1,114 @@
+{
+  "dataset": "cora",
+  "protocol_train": "uniform",
+  "protocol_eval": "heart",
+  "model": "dcdlp",
+  "ablation": "A5",
+  "seed": 0,
+  "cn_feature_mode": "residual",
+  "interaction_mode": "disabled",
+  "score_routing_enabled": true,
+  "routing_finetune_encoder": "frozen",
+  "config_hash": "415c626805c9",
+  "git_commit": "untracked",
+  "best_epoch": 24,
+  "metrics": {
+    "mrr": 0.1127352617519484,
+    "hits10": 0.2637571157495256,
+    "hits20": 0.3870967741935484,
+    "hits50": 0.6072106261859582,
+    "hits100": 0.7893738140417458,
+    "mean_positive_rank": 59.361480075901326,
+    "auc": 0.8725763388050941,
+    "ap": 0.010299252740646022,
+    "groups": {
+      "HH": {
+        "mrr": 0.17274248481256513,
+        "count": 161
+      },
+      "HL": {
+        "mrr": 0.02262305796939637,
+        "count": 134
+      },
+      "LH": {
+        "mrr": 0.2552351953796853,
+        "count": 67
+      },
+      "LL": {
+        "mrr": 0.06950118200070174,
+        "count": 165
+      }
+    },
+    "macro_mrr": 0.13002548004058714,
+    "worst_group_mrr": 0.02262305796939637,
+    "group_gap": 0.23261213741028894
+  },
+  "runtime": {
+    "train_seconds": 3317.2151567,
+    "inference_seconds": 0.0,
+    "peak_gpu_mb": 108.71826171875
+  },
+  "checkpoint": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\cora\\M3\\checkpoints\\cora_uniform_seed0_415c626805c9.pt",
+  "predictions": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\cora\\M3\\predictions\\cora_uniform_seed0_415c626805c9_predictions.csv",
+  "intervention_failures": {
+    "NO_CANDIDATE": 112
+  },
+  "cn_feature_metadata": {
+    "residualizer_type": "NOT_USED",
+    "residualizer_parameters": {},
+    "fit_seed": 0,
+    "fit_sample_count": 8976,
+    "symmetric_endpoint_degrees": true,
+    "cn_feature_mode": "residual",
+    "cn_input_schema": "selective_v1",
+    "fit_split": "train",
+    "uses_valid_or_test": false,
+    "data_source": "train_positive+fixed_train_negative_epoch0",
+    "data_hash": "9fb20e3e4bdb2326fbf4f27267677329cd0bed3e206e60f71867a86691c694e8",
+    "config_hash": "6714ba51ff81",
+    "used_as_model_input": true
+  },
+  "evaluation_candidates": {
+    "source": "dataset_official_grouped",
+    "hash": "3d3960e42cbae3befddb666195eff1b66ef1a473813eb21ff99bdb41311ce1cc",
+    "shape": [
+      527,
+      500,
+      2
+    ],
+    "seed": null,
+    "protocol": "heart",
+    "negatives_per_positive": 500
+  },
+  "data_integrity": {
+    "split_hash": "4d52b749074b",
+    "train_positive_hash": "cf8bee4faf9f1e67678d45b7cd8c350d04e95baeead6b79c4cff607556fb7129",
+    "valid_positive_hash": "a4b279e5cc0161e811d456f320ec2765bf5e989c01793aeefb06863509b44aea",
+    "test_positive_hash": "cf03f7befdd04fc127de10a37d3d502c6538ea4a0d4b9345d442846b496079f0",
+    "candidate_hash": "3d3960e42cbae3befddb666195eff1b66ef1a473813eb21ff99bdb41311ce1cc"
+  },
+  "intervention_cache": {
+    "source": "deterministic_online_generation",
+    "id": "6434479d3475"
+  },
+  "parameter_count": {
+    "total": 263878,
+    "trainable": 59205,
+    "cn_branch": 25345
+  },
+  "loss_weights": {
+    "lambda_link": 1.0,
+    "lambda_score_route": 0.03,
+    "lambda_target_response": 0.03,
+    "lambda_interaction_share": 0.01,
+    "lambda_interaction_delta": 0.01,
+    "lambda_orthogonal_legacy": 0.0,
+    "lambda_adversarial_legacy": 0.0
+  },
+  "device": "cuda",
+  "result_file": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\cora\\M3\\raw\\cora_uniform_seed0_415c626805c9.json",
+  "pipeline_model": "M3",
+  "mechanism_predictions": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\cora\\M3\\mechanism_audit\\cora_uniform_seed0_415c626805c9\\intervention_predictions.csv",
+  "probe_results": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\cora\\M3\\probe\\cora_uniform_seed0_415c626805c9\\posthoc_probe.csv",
+  "evaluation_file": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\cora\\M3\\mechanism_audit\\cora_uniform_seed0_415c626805c9\\evaluation.json"
+}

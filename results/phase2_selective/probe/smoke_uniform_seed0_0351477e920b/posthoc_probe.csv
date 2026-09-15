@@ -1,0 +1,16 @@
+probe,role,representation,target,probe_seed,architecture,hyperparameter_candidates,selected_hyperparameter,validation_metric,train_count,valid_count,test_count,r2,mae,spearman
+z_cn_to_degree,cross_leakage,z_cn,degree,0,StandardScaler+Ridge,0.01;0.1;1.0;10.0;100.0,1.0,0.5919639231621302,32,4,9,-0.2872174261340994,0.9236411278811342,0.6522746734427085
+z_residual_to_degree,cross_leakage,z_residual,degree,0,StandardScaler+Ridge,0.01;0.1;1.0;10.0;100.0,0.1,0.8899498941360987,32,4,9,-0.546629539302385,1.040283503544028,0.5210268002259312
+z_degree_to_cn_residual,cross_leakage,z_degree,cn_residual,0,StandardScaler+Ridge,0.01;0.1;1.0;10.0;100.0,100.0,0.4262440462457199,32,4,9,-7.593492687585799,0.48244214315209644,0.17647058823529413
+z_degree_to_degree,target_retention,z_degree,degree,0,StandardScaler+Ridge,0.01;0.1;1.0;10.0;100.0,10.0,0.651742203384794,32,4,9,-13.887527462738566,1.8094890186921109,0.49152542372881364
+z_cn_to_cn_residual,target_retention,z_cn,cn_residual,0,StandardScaler+Ridge,0.01;0.1;1.0;10.0;100.0,10.0,0.21416158770212868,32,4,9,0.6788961945006871,0.1411677827514476,0.7814537453079465
+z_cn_to_degree,cross_leakage,z_cn,degree,1,StandardScaler+Ridge,0.01;0.1;1.0;10.0;100.0,1.0,0.5919639231621302,32,4,9,-0.2872174261340994,0.9236411278811342,0.6522746734427085
+z_residual_to_degree,cross_leakage,z_residual,degree,1,StandardScaler+Ridge,0.01;0.1;1.0;10.0;100.0,0.1,0.8899498941360987,32,4,9,-0.546629539302385,1.040283503544028,0.5210268002259312
+z_degree_to_cn_residual,cross_leakage,z_degree,cn_residual,1,StandardScaler+Ridge,0.01;0.1;1.0;10.0;100.0,100.0,0.4262440462457199,32,4,9,-7.593492687585799,0.48244214315209644,0.17647058823529413
+z_degree_to_degree,target_retention,z_degree,degree,1,StandardScaler+Ridge,0.01;0.1;1.0;10.0;100.0,10.0,0.651742203384794,32,4,9,-13.887527462738566,1.8094890186921109,0.49152542372881364
+z_cn_to_cn_residual,target_retention,z_cn,cn_residual,1,StandardScaler+Ridge,0.01;0.1;1.0;10.0;100.0,10.0,0.21416158770212868,32,4,9,0.6788961945006871,0.1411677827514476,0.7814537453079465
+z_cn_to_degree,cross_leakage,z_cn,degree,2,StandardScaler+Ridge,0.01;0.1;1.0;10.0;100.0,1.0,0.5919639231621302,32,4,9,-0.2872174261340994,0.9236411278811342,0.6522746734427085
+z_residual_to_degree,cross_leakage,z_residual,degree,2,StandardScaler+Ridge,0.01;0.1;1.0;10.0;100.0,0.1,0.8899498941360987,32,4,9,-0.546629539302385,1.040283503544028,0.5210268002259312
+z_degree_to_cn_residual,cross_leakage,z_degree,cn_residual,2,StandardScaler+Ridge,0.01;0.1;1.0;10.0;100.0,100.0,0.4262440462457199,32,4,9,-7.593492687585799,0.48244214315209644,0.17647058823529413
+z_degree_to_degree,target_retention,z_degree,degree,2,StandardScaler+Ridge,0.01;0.1;1.0;10.0;100.0,10.0,0.651742203384794,32,4,9,-13.887527462738566,1.8094890186921109,0.49152542372881364
+z_cn_to_cn_residual,target_retention,z_cn,cn_residual,2,StandardScaler+Ridge,0.01;0.1;1.0;10.0;100.0,10.0,0.21416158770212868,32,4,9,0.6788961945006871,0.1411677827514476,0.7814537453079465

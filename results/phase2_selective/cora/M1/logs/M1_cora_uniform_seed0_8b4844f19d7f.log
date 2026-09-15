@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-09-13T15:52:03",
+  "model_label": "M1",
+  "dataset": "cora",
+  "seed": 0,
+  "run_id": "cora_uniform_seed0_8b4844f19d7f",
+  "result_file": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\cora\\M1\\raw\\cora_uniform_seed0_8b4844f19d7f.json",
+  "log_file": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\cora\\M1\\logs\\M1_cora_uniform_seed0_8b4844f19d7f.log",
+  "status": "COMPLETED",
+  "checkpoint": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\cora\\M1\\checkpoints\\cora_uniform_seed0_8b4844f19d7f.pt",
+  "evaluation_file": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\cora\\M1\\mechanism_audit\\cora_uniform_seed0_8b4844f19d7f\\evaluation.json",
+  "probe_file": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\phase2_selective\\cora\\M1\\probe\\cora_uniform_seed0_8b4844f19d7f\\posthoc_probe.csv",
+  "failure_code": "",
+  "message": ""
+}

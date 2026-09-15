@@ -1,0 +1,70 @@
+{
+  "evidence_status": "INCOMPLETE_MISSING",
+  "missing_run_pairs": 6,
+  "decision": "A14_MECHANISM_NOT_SUPPORTED",
+  "criteria": {
+    "performance_parity": {
+      "met": false,
+      "status": "MISSING"
+    },
+    "routing": {
+      "met": false,
+      "status": "MISSING",
+      "mean_deltas": {
+        "degree": null,
+        "cn": null
+      }
+    },
+    "cross_sensitivity": {
+      "met": false,
+      "status": "MISSING",
+      "mean_deltas": {
+        "degree_to_cn": null,
+        "degree_to_residual": null,
+        "cn_to_degree": null,
+        "cn_to_residual": null
+      }
+    },
+    "posthoc_leakage": {
+      "met": false,
+      "status": "MISSING",
+      "improved_probe_count": 0,
+      "paired_probe_count": 0
+    },
+    "target_retention": {
+      "met": false,
+      "status": "MISSING",
+      "retained_count": 0,
+      "paired_probe_count": 0
+    },
+    "interaction_bypass": {
+      "met": false,
+      "status": "MISSING",
+      "max_interaction_share": "MISSING",
+      "paired_mean_delta": null
+    },
+    "random_rewire_control": {
+      "met": false,
+      "status": "MISSING",
+      "a14_advantage_constrained": null,
+      "a14_advantage_random_rewire": null
+    },
+    "cross_dataset_seed_stability": {
+      "met": false,
+      "status": "MISSING",
+      "nonnegative_fraction": "MISSING"
+    }
+  },
+  "test_set_tuning_warning": "A14-w010 was selected after inspecting test-set MRR in exploratory runs; this phase is diagnostic, not independent confirmatory evidence.",
+  "audit_seed": 20260723,
+  "requested_models": [
+    "A14-w010",
+    "A5"
+  ],
+  "available_pair_count": 0,
+  "artifact_count": 0,
+  "cache_files": [
+    "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\cache\\interventions\\smoke_test_seed0.jsonl"
+  ],
+  "output_dir": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\mechanism_audit"
+}

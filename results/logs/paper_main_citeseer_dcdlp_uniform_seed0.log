@@ -1,0 +1,54 @@
+{
+  "dataset": "citeseer",
+  "protocol_train": "uniform",
+  "protocol_eval": "heart",
+  "model": "dcdlp",
+  "ablation": "A14",
+  "seed": 0,
+  "config_hash": "9d6df67f353c",
+  "git_commit": "untracked",
+  "best_epoch": 3,
+  "metrics": {
+    "mrr": 0.6914051015780168,
+    "hits10": 0.9736263736263736,
+    "hits20": 0.9978021978021978,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 2.5714285714285716,
+    "auc": 0.9172532302861973,
+    "ap": 0.5652316139344417,
+    "groups": {
+      "HH": {
+        "mrr": 0.9666666666666667,
+        "count": 135
+      },
+      "HL": {
+        "mrr": 0.7039112166605773,
+        "count": 115
+      },
+      "LH": {
+        "mrr": 0.7674132364810331,
+        "count": 59
+      },
+      "LL": {
+        "mrr": 0.39631609828527636,
+        "count": 146
+      }
+    },
+    "macro_mrr": 0.7085768045233884,
+    "worst_group_mrr": 0.39631609828527636,
+    "group_gap": 0.5703505683813903
+  },
+  "runtime": {
+    "train_seconds": 1334.002242800023,
+    "inference_seconds": 0.0,
+    "peak_gpu_mb": 89.517578125
+  },
+  "checkpoint": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\checkpoints\\citeseer_uniform_seed0_9d6df67f353c.pt",
+  "predictions": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\raw\\citeseer_uniform_seed0_9d6df67f353c_predictions.csv",
+  "intervention_failures": {
+    "DUPLICATE_EDGE": 3360,
+    "NO_CANDIDATE": 558
+  },
+  "result_file": "D:\\桌面\\研究生相关事项\\CodeWork\\DCDLP_work\\DCDLP\\results\\raw\\citeseer_uniform_seed0_9d6df67f353c.json"
+}

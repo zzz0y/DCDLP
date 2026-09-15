@@ -1,0 +1,2 @@
+name: intervention
+types: [cn_minus_2, cn_minus_1, cn_plus_1, cn_plus_2, degree_u_minus_1, degree_u_plus_1, degree_v_minus_1, degree_v_plus_1]

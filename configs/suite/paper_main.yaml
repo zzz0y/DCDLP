@@ -1,0 +1,7 @@
+name: paper_main
+datasets: [cora, citeseer, pubmed, ogbl-collab, ogbl-ddi]
+models: [degree, pa, cn, aa, ra, gae-gcn, gae-sage, seal, buddy, neo-gnn, ncn, ncnc, ltlp, dcdlp]
+protocol_train: [uniform, degree_corrected, mix]
+protocol_eval: [standard, heart, degree_corrected, intervention]
+small_seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+ogb_seeds: [0, 1, 2, 3, 4]

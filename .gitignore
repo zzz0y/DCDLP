@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+*.egg-info/
+
+# Downloaded datasets and generated local caches are intentionally not tracked.
+# See README.md for the official download/prepare commands.
+data/*
+!data/.gitkeep
+cache/*
+!cache/.gitkeep
+
+# Official baseline repositories are fetched on demand by scripts/download_data.py.
+# They contain large datasets and their own Git metadata; only this project code
+# and the reproducible experiment snapshot under results/ are versioned here.
+third_party/*
+
+# Local/editor and OS noise.
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

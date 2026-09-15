@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\桌面\研究生相关事项\CodeWork\DCDLP_work\DCDLP\src\dcdlp\cli.py", line 172, in <module>
+    main()
+  File "D:\桌面\研究生相关事项\CodeWork\DCDLP_work\DCDLP\src\dcdlp\cli.py", line 168, in main
+    args.func(args)
+  File "D:\桌面\研究生相关事项\CodeWork\DCDLP_work\DCDLP\src\dcdlp\cli.py", line 112, in train
+    dataset = load_dataset(config.dataset, _data_root(args), config.protocol_eval, config.seed)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\桌面\研究生相关事项\CodeWork\DCDLP_work\DCDLP\src\dcdlp\data\loaders.py", line 312, in load_dataset
+    return _load_npz(prepared)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\桌面\研究生相关事项\CodeWork\DCDLP_work\DCDLP\src\dcdlp\data\loaders.py", line 195, in _load_npz
+    dataset.validate()
+  File "D:\桌面\研究生相关事项\CodeWork\DCDLP_work\DCDLP\src\dcdlp\data\loaders.py", line 130, in validate
+    self._validate_negatives("valid", self.valid_neg, splits[1])
+  File "D:\桌面\研究生相关事项\CodeWork\DCDLP_work\DCDLP\src\dcdlp\data\loaders.py", line 148, in _validate_negatives
+    raise ValueError(f"{split}_neg conflicts with its corresponding positive edge")
+ValueError: valid_neg conflicts with its corresponding positive edge

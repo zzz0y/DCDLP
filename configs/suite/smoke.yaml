@@ -1,0 +1,12 @@
+name: smoke
+datasets: [smoke]
+models: [dcdlp]
+seeds: [0]
+protocol_train: [uniform]
+pretrain_epochs: 1
+disentangle_epochs: 1
+hidden_dim: 16
+branch_dim: 8
+batch_size: 256
+intervention_ratio: 0.05
+negatives_per_positive_eval: 10

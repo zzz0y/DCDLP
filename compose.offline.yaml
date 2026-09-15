@@ -1,0 +1,19 @@
+services:
+  dcdlp:
+    image: dcdlp:2.3.1-cu121
+    container_name: dcdlp-experiment
+    network_mode: none
+    shm_size: 16gb
+    gpus: all
+    working_dir: /workspace
+    user: "${DCDLP_UID:-1000}:${DCDLP_GID:-1000}"
+    environment:
+      HOME: /tmp
+      PYTHONPATH: /workspace/src
+      DCDLP_GPUS: "${DCDLP_GPUS:-0}"
+      DCDLP_RESUME: "true"
+      DCDLP_PREFLIGHT_ONLY: "${DCDLP_PREFLIGHT_ONLY:-false}"
+    volumes:
+      - ./:/workspace
+    command: ["bash", "scripts/run_full_experiments.sh"]
+    restart: "no"

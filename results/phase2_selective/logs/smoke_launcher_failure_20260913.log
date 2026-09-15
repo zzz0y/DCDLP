@@ -1,0 +1,5 @@
+status: FAILED
+failure_code: ModuleNotFoundError
+stage: Step 9 launcher import (before training)
+message: No module named 'scripts'
+resolution: Added direct-script/module dual import fallback; no model, checkpoint, prediction, or metric was produced by this failed attempt.

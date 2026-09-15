@@ -1,0 +1,1 @@
+Official baseline is intentionally isolated from the DCDLP implementation. Run scripts/download_data.py --third-party and the matching official adapter; no synthetic score was emitted.

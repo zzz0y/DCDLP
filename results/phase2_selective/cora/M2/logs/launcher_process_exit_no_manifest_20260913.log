@@ -1,0 +1,6 @@
+status: FAILED
+failure_code: PROCESS_EXIT_NO_MANIFEST
+stage: Step 11, M2 seed 0 before checkpoint
+observed: Launcher and Python child exited; no manifest row, result JSON, checkpoint, stdout, stderr, or traceback was produced.
+cause: UNKNOWN
+action: Preserve this record and retry M2 only after another concurrent model process releases resources. No score or replacement data was generated.
