@@ -15,11 +15,12 @@ The paper suites use these datasets:
 
 | Dataset | Experiments | Official download/documentation |
 | --- | --- | --- |
-| Cora | `paper_main`, `paper_ablation`, `paper_analysis` (standard and HeaRT protocols) | [PyG Planetoid documentation](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.Planetoid.html); HeaRT files via [HeaRT](https://github.com/Juanhui28/HeaRT) |
+| Cora | `paper_main`, `paper_ablation`, and the phase-2 A5 pilot (standard and HeaRT protocols) | [PyG Planetoid documentation](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.Planetoid.html); HeaRT files via [HeaRT](https://github.com/Juanhui28/HeaRT) |
 | CiteSeer | `paper_main`, `paper_ablation` (standard and HeaRT protocols) | [PyG Planetoid documentation](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.Planetoid.html); HeaRT files via [HeaRT](https://github.com/Juanhui28/HeaRT) |
 | PubMed | `paper_main`, `paper_ablation` (standard and HeaRT protocols) | [PyG Planetoid documentation](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.Planetoid.html); HeaRT files via [HeaRT](https://github.com/Juanhui28/HeaRT) |
 | `ogbl-collab` | `paper_main`, `paper_ablation` (OGB official temporal split) | [OGB link-property datasets](https://ogb.stanford.edu/docs/linkprop/) |
 | `ogbl-ddi` | `paper_main`, `paper_ablation` (OGB official protein-target split) | [OGB link-property datasets](https://ogb.stanford.edu/docs/linkprop/) |
+| `synthetic-*` | `paper_analysis` mechanism experiments | Built into `src/dcdlp/data/synthetic.py`; no download |
 
 The repository also contains an `ogbl-ppa` dataset configuration for optional
 experiments; it is documented and downloaded through the same [OGB link-property
